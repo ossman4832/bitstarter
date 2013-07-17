@@ -11,7 +11,7 @@ var msgFile = fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
    fs.readFileSync('index.html');   
-   response.send('Hello');
+   response.send(msgFile.toString);
 });
 
 var port = process.env.PORT || 5000;
