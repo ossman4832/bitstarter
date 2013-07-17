@@ -10,7 +10,7 @@ var app = express.createServer(express.logger());
 
 
 app.get('/', function(request, response) {
-   fs.RradFileSync('./bitstarter/index.html');   
+   fs.readFileSync('./bitstarter/index.html');   
    response.send('Hello');
 });
 
