@@ -1,9 +1,14 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var msgFile = fs.ReadFileSync('index.html');
+
 app.get('/', function(request, response) {
-   var msgFile = fs.ReadFileSync('index.html');
    response.send(msgFile);
 });
 
