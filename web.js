@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var fs = require('fs');
+//var fs = require('fs');
 
 var express = require('express');
 
