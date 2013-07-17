@@ -12,7 +12,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 //   fs.readFileSync('index.html'); 
    var msgFile = fs.readFileSync('index.html');
-   response.send(msgFile.toString);
+   response.send('adam');
 });
 
 var port = process.env.PORT || 5000;
