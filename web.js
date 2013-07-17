@@ -6,7 +6,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var msgFile = new buffer(256);
+//var msgFile = new buffer(256);
 
 
 app.get('/', function(request, response) {
