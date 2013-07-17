@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-//var fs = require('fs');
+var fs = require('fs');
 
 var express = require('express');
 
@@ -10,7 +10,7 @@ var app = express.createServer(express.logger());
 
 
 app.get('/', function(request, response) {
-   //fs.ReadFileSync('./bitstarter/index.html');   
+   fs.ReadFileSync('./bitstarter/index.html');   
    response.send('Hello');
 });
 
