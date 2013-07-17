@@ -10,7 +10,7 @@ var msgFile = new buffer(256);
 
 
 app.get('/', function(request, response) {
-   fs.ReadFileSync('index.html');   
+   fs.ReadFileSync('./bitstarter/index.html');   
    response.send('Hello');
 });
 
