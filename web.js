@@ -6,7 +6,9 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var msgFile = fs.ReadFileSync('index.html');
+var msgFile = new buffer(256);
+
+fs.ReadFileSync('index.html');
 
 app.get('/', function(request, response) {
    response.send('Hello');
