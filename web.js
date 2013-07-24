@@ -6,14 +6,14 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
+var htmlfile = 'index.html';
 
 app.get('/', function(request, response) {
-   var msgFile = fs.readFileSync('index.html');
-   var msgFile2 = msgFile.toString();
-   response.send(msgFile2);
+   var html = fs.readFileSync(htmlfile).toString();
+   response.send(html);
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
